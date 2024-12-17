@@ -1,5 +1,5 @@
 import { useRouteError } from "react-router-dom";
-import { ErrorResponse } from "../../interfaces/interfaces";
+import { ErrorResponse } from "@/interfaces/interfaces";
 
 const ErrorDetail = ({ content }: { content?: string }) => {
   return content ? <i className="text-red-500">{content}</i> : null;

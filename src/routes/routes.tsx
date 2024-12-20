@@ -1,8 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
 import { paths } from "./paths";
 import DefaultLayout from "@/layouts/DefaultLayout";
-import Home from "@/views/Home";
 import RoutingErrorsPage from "@/components/custom/RoutingErrorsPage";
+import Home from "@/views/Home";
+import About from "@/views/About";
+import Services from "@/views/Services";
+import Lawyers from "@/views/Lawyers";
+import Contact from "@/views/Contact";
 
 const routes = createBrowserRouter([
   {
@@ -13,6 +17,26 @@ const routes = createBrowserRouter([
       {
         index: true,
         element: <Home />,
+      },
+
+      {
+        path: paths.about,
+        element: <About />,
+      },
+
+      {
+        path: paths.services,
+        element: <Services />,
+      },
+
+      {
+        path: paths.lawyers,
+        element: <Lawyers />,
+      },
+
+      {
+        path: paths.contact,
+        element: <Contact />,
       },
 
       //  include more nested routes as written below
